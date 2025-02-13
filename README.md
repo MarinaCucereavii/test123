@@ -6,5 +6,5 @@ BD-421
 BDB
 auejiznivaram
 strazichi
-Salam
+
 
