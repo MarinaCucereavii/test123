@@ -4,7 +4,5 @@ bd421
 BD-421
 2025
 BDB
-auejiznivaram
-strazichi
-
+Nu scrim nebunii!!!
 
