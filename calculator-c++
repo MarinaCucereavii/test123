@@ -1,0 +1,55 @@
+#include <iostream>
+using namespace std;
+
+void afiseazaMeniu() {
+    cout << "Calculator de buzunar\n";
+    cout << "1. Adunare\n";
+    cout << "2. Scadere\n";
+    cout << "3. Inmultire\n";
+    cout << "4. Impartire\n";
+    cout << "5. Iesire\n";
+    cout << "Alege operatia dorita: ";
+}
+
+int main() {
+    int alegere;
+    double numar1, numar2;
+
+    while (true) {
+        afiseazaMeniu();
+        cin >> alegere;
+
+        if (alegere == 5) {
+            cout << "La revedere!" << endl;
+            break;
+        }
+
+        cout << "Introdu primul numar: ";
+        cin >> numar1;
+        cout << "Introdu al doilea numar: ";
+        cin >> numar2;
+
+        switch (alegere) {
+            case 1:
+                cout << "Rezultatul adunarii este: " << numar1 + numar2 << endl;
+                break;
+            case 2:
+                cout << "Rezultatul scaderii este: " << numar1 - numar2 << endl;
+                break;
+            case 3:
+                cout << "Rezultatul inmultirii este: " << numar1 * numar2 << endl;
+                break;
+            case 4:
+                if (numar2 != 0) {
+                    cout << "Rezultatul impartirii este: " << numar1 / numar2 << endl;
+                } else {
+                    cout << "Impartirea la zero nu este permisa!" << endl;
+                }
+                break;
+            default:
+                cout << "Optiune invalida! Te rog sa alegi o optiune valida." << endl;
+        }
+    }
+
+    return 0;
+}
